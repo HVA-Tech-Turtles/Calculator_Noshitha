@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="stylesheet1.css">
+</head>
+
+<body>
+
+    <h2 class="aclass">This is heading</h2>
+    <p class="aclass" id="trace">This is a paragraph in aclass</p>
+    <p class="bclass">This is a paragraph line in bclass</p>
+
+
+
+    <ul>
+        <li>1st child</li>
+        <li>2nd child</li>
+        <li>3rd child</li>
+        <li>4th child</li>
+        <li>5th child</li>
+    </ul>
+    <table>
+        <thead>
+            <td>Name</td>
+            <td> Age</td>
+            <td> Sec</td>
+        </thead>
+        <tr>
+            <td>Krishna Rao</td>
+            <td>30</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Naga Lakshmi</td>
+            <td>29</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Noshitha</td>
+            <td>18</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Poshanya</td>
+            <td>15</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+    <a href="https://www.google.com" target="_blank">Click here to go to google</a>
+
+    <h1>Advanced Selectors</h1>
+    <p>This style is applied to every &lt; p &gt; tag that is after h1 tag</p>
+
+    <form>
+        <input type="text" placeholder="Enter your name">
+        <input type="integer" placeholder="Enter your age">
+        <textarea></textarea>
+        <button>SUBMIT</button>
+        <!--Here textarea and Button comes under same parent (form) these are called siblings.We can style these types of elements using ~ symbol.textarea ~ button-->
+    </form>
+
+    <ul>
+        <li>Lorem voluptatibus!</li>
+        
+    </ul>
+<!--for descendant selectors-->
+    <div id="main_content">
+        <p>
+            this is a paragraph
+        </p>
+        <p>this is also a paragraph</p>
+        <div id="sub_content">
+            <p>This is a paragraph under another div tag</p>
+        </div>
+        <ul>
+            <li>
+                This is list under div tag
+            </li>
+        </ul>
+    </div>
+    This is out of div tag
+
+
+    <!--For attribute selectors-->
+    <img src="https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60">
+    <p>This is a picture</p>
+    
+    </div>
+
+    <!--Box model-->
+    <div class="box">
+        Box
+    </div>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+.aclass {
+    color: rgb(11, 121, 121);
+    font-weight: 3000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bclass {
+    color: plum;
+    background-color: rgb(102, 85, 210);
+}
+
+p {
+    color: rgb(255, 234, 96);
+}/*gives preference for classes instead of tags*/
+#trace {
+    color: rgb(251, 255, 0);
+    font-style: italic;
+}/*gives preference to id when compared to class and tag selectors*/
+
+/*PSEUDO SELECTOR*/
+li:hover{
+    color:rgb(26, 160, 233);
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+tr:first-child{
+    color:rgb(70, 184, 112);
+}
+
+tr:last-child{
+    color:rgb(236, 121, 215);
+}
+tr:nth-child(3){
+    color:rgb(238, 188, 52);
+}
+
+/*Selectors for links or anchor tag*/
+
+a:link{
+    color:rgb(164, 58, 171);
+}
+
+a:visited{
+    color:brown;
+}
+a:hover{
+    color:blue;
+}
+/*ADVANCED SELECTORS*/
+/*this is for followed by*/
+h1+p{
+    color:chartreuse;
+    font-size: large;
+    
+}
+/* this is for tags under same parent*/
+textarea ~ button
+{
+    
+    color:rgb(114, 231, 64);
+}
+
+/*parent > child*/
+ul>li{
+    color:gray;
+}
+/*descendants*/
+/* parent child*/
+#main_content p{
+    color: rgb(73, 44, 147);
+}
+
+body{
+    background: rgb(254, 249, 249);
+}
+/*Gradients*/
+/*Gradients are 2 types -->linear and -->circular*/
+/* LINEAR */
+.container{
+    /* background: linear-gradient(to right,rgb(115, 216, 130),rgb(183, 215, 22),yellow); */
+    /* background: linear-gradient(to bottom right,rgb(115, 216, 130),rgb(183, 215, 22),yellow); */
+    /* background: linear-gradient(51deg,rgb(115, 216, 130),rgb(183, 215, 22),yellow); */
+    /* background: radial-gradient(rgb(115, 216, 130),rgb(183, 215, 22),rgb(11, 200, 127)); */
+    background: radial-gradient(rgb(239, 79, 79) 20%,rgba(234, 93, 46, 0.903) 30%,rgb(243, 214, 68) );
+}
+
+.box{
+    /* border:10px solid black; */
+    /* border:5px dashed rgb(150, 252, 129); */
+    border:5px dotted rgb(28, 194, 235);
+    padding:20px 10px 20px 20px;
+}
