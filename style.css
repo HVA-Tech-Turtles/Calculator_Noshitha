@@ -1,0 +1,81 @@
+
+body{
+    background-color:rgb(238, 249, 156);
+}
+.cen{
+    
+    background-color: rgb(236, 240, 248);
+    width:350px;
+    padding: 5px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border:3px solid black;
+    border-radius: 15px;
+    transform: translate(155%,15%);
+    
+
+}
+button{
+    margin:3px;
+    border-left:3px solid black;
+    font-size: large;
+    width: 50px;
+    padding: 5px;;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgb(192, 191, 183);
+    
+    
+}
+.container
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.row:last-child{
+    background-color: orange;
+}
+.cal{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* border: 5px solid black; */
+}
+.text_area input{
+    font-size: x-large;
+    color: rgb(26, 122, 2);
+    padding: 5px;
+    width: 218px;
+    height: 50px;
+    border:3px solid black;
+    border-radius:20px;
+    margin:10px;
+}
+.row{
+    box-shadow:-8px -4px 8px rgb(206, 209, 202)
+}
+.row:active{
+    font-size: medium;
+}
+.expand{
+    width:100px;
+}
+#ac{
+    background-color: rgb(232, 44, 44);
+}
+#eq{
+    background-color: rgb(47, 255, 64);
+}
+.feature{
+    font-size: medium;
+    width: 100px;
+    height: 50px;
+    display: flex;
+   text-align: end;
+   transform:translate(1290px,-290px);
+}
+.f1{
+    margin-bottom:15px;
+}
