@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,6 +40,76 @@
             <button>Convert</button>
         </div>
     </div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="utls.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="text_center">Currency Convertor</h1>
+    <div class="cal">
+       
+        
+        <div class="cen">
+            
+            <a href="index_calcu.html">
+                <button type="button" class="feature " value="Calculator">Calculator</button></a>
+            <a href="scientific_calc.html">
+                <button type="button" class="feature " value="Met">Scientific Calculator</button></a>
+            <a href="currency.html">
+                <button type="button" class="feature" value="Currency">Currency Convertor</button></a>
+            <a href="meterscale.html">
+                <button type="button" class="feature " value="Meter Scale">Meter Scale</button></a>
+
+                
+            <div class="text_area text_center" >
+                <input type="text" id="result">
+            </div>
+            <div class="container text_center">
+                <button type="button" class="row operator" value="to" id="to" onclick="dis('-->')">To</button>
+                <button type="button" class="row  operator " value="AC" id="ac" onclick="allclr()" >AC</button>
+                <button type="button" class="row  operator" value="C" onclick="clr()">C</button>
+                <button type="button" class="row  operator" value="km" onclick="dis('inr')">INR</button>
+            </div>
+            <div class="container  text_center">
+                <button type="button" class="row number"  value="7" onclick="dis('7')">7</button>
+                <button type="button" class="row number" value="8" onclick="dis('8')">8</button>
+                <button type="button" class="row number"  value="9" onclick="dis('9')">9</button>
+                <button type="button" class="row operator" value="mtr" onclick="dis('usd')">USD</button>
+            </div>
+            <div class="container text_center">
+                <button type="button" class="row number" value="4" onclick="dis('4')">4</button>
+                <button type="button" class="row number" value="5" onclick="dis('5')">5</button>
+                <button type="button" class="row number" value="6" onclick="dis('6')">6</button>
+                <button type="button" class="row operator"  value="cm" onclick="dis('yen')" >Yen</button>
+            </div>
+            <div class="container text_center">
+                <button type="button" class="row number" value="1" onclick="dis('1')">1</button>
+                <button type="button" class="row number" value="2" onclick="dis('2')">2</button>
+                <button type="button" class="row number" value="3" onclick="dis('3')">3</button>
+                <button type="button" class="row operator" value="mm" onclick="dis('din')">Dinar</button>
+            </div>
+            <div class="container text_center">
+                
+                <button type="button" class="row number expand" value="0" onclick="dis('0')">0</button>
+                <button type="button" class="row number" value="."  onclick="dis('.')">.</button>
+                <button type="button" class="row operator "  id="eq" value="="  onclick="solve()">=</button>
+            </div>
+        </div>
+    </div>
+    
+       
+    <script src="cur_js.js" ></script>
 </body>
 
 </html>
