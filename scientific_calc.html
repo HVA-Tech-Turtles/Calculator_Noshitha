@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="utls.css">
+    <title>Scientific Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calculator.png">
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <a href="index_calcu.html">
             <button type="button" class="feature " value="Calculator">Calculator</button></a>
         <a href="scientific_calc.html">
-            <button type="button" class="feature " value="Met">Scientific Calculator</button></a>
+            <button type="button" class="feature " value="Sci">Scientific Calculator</button></a>
         <a href="currency.html">
             <button type="button" class="feature" value="Currency">Currency Convertor</button></a>
         <a href="meterscale.html">
@@ -28,56 +29,56 @@
 
 
         <div class="text_area text_center">
-            <input type="text" id="result">
+            <input type="text"  id="result">
         </div>
         <div class="container text_center">
-            <button type="button" class="row  operator sc" value="sin" onclick="sin()">sin</button>
-            <button type="button" class="row  operator sc" value="pi" onclick="pi()">&pi;</button>
-            <button type="button" class="row  operator expand" value="AC" id="ac" onclick="allclr()">AC</button>
-            <button type="button" class="row  operator" id="c" value="C" onclick="clr()">C</button>
-            <button type="button" class="row  operator" value="/" onclick="dis('/')">/</button>
+            <button type="button" class="row   sc" value="sin" onclick="sin()">sin</button>
+            <button type="button" class="row   sc" value="pi" onclick="pi()">&pi;</button>
+            <button type="button" class="row   expand" value="AC" id="ac" onclick="allclr()">AC</button>
+            <button type="button" class="row  " id="c" value="C" onclick="clr()">DE</button>
+            <button type="button" class="row  " value="/" onclick="dis('/')">/</button>
             
         </div>
         <div class="container  text_center">
-            <button type="button" class="row  operator sc" value="cos" onclick="cos()">cos</button>
-            <button type="button" class="row  operator sc" value="root" onclick="root()">&radic;</button>
-            <button type="button" class="row number" value="7" onclick="dis('7')">7</button>
-            <button type="button" class="row number" value="8" onclick="dis('8')">8</button>
-            <button type="button" class="row number" value="9" onclick="dis('9')">9</button>
-            <button type="button" class="row operator" value="*" onclick="dis('*')">*</button>
+            <button type="button" class="row   sc" value="cos" onclick="cos()">cos</button>
+            <button type="button" class="row   sc" value="root" onclick="root()">&radic;</button>
+            <button type="button" class="row " value="7" onclick="dis('7')">7</button>
+            <button type="button" class="row " value="8" onclick="dis('8')">8</button>
+            <button type="button" class="row " value="9" onclick="dis('9')">9</button>
+            <button type="button" class="row " value="*" onclick="dis('*')">*</button>
          
         </div>
         <div class="container text_center">
-            <button type="button" class="row  operator sc" value="tan" onclick="tan()">tan</button>
-            <button type="button" class="row  operator sc" value="exp" onclick="exp()">^</button>
-            <button type="button" class="row number" value="4" onclick="dis('4')">4</button>
-            <button type="button" class="row number" value="5" onclick="dis('5')">5</button>
-            <button type="button" class="row number" value="6" onclick="dis('6')">6</button>
-            <button type="button" class="row operator" value="-" onclick="dis('-')">-</button>
+            <button type="button" class="row   sc" value="tan" onclick="tan()">tan</button>
+            <button type="button" class="row   sc" value="exp" onclick="exp()">^2</button>
+            <button type="button" class="row " value="4" onclick="dis('4')">4</button>
+            <button type="button" class="row " value="5" onclick="dis('5')">5</button>
+            <button type="button" class="row " value="6" onclick="dis('6')">6</button>
+            <button type="button" class="row " value="-" onclick="dis('-')">-</button>
             
         </div>
         <div class="container text_center">
-            <button type="button" class="row  operator sc" value="log" onclick="log()">log</button>
-            <button type="button" class="row  operator sc" value="fact" onclick="fact()">!</button>
-            <button type="button" class="row number" value="1" onclick="dis('1')">1</button>
-            <button type="button" class="row number" value="2" onclick="dis('2')">2</button>
-            <button type="button" class="row number" value="3" onclick="dis('3')">3</button>
-            <button type="button" class="row operator" value="+" onclick="dis('+')">+</button>
+            <button type="button" class="row   sc" value="log" onclick="log()">log</button>
+            <button type="button" class="row   sc" value="fact" onclick="fact()">!</button>
+            <button type="button" class="row " value="1" onclick="dis('1')">1</button>
+            <button type="button" class="row " value="2" onclick="dis('2')">2</button>
+            <button type="button" class="row " value="3" onclick="dis('3')">3</button>
+            <button type="button" class="row " value="+" onclick="dis('+')">+</button>
             
             
         </div>
         <div class="container text_center">
-            <button type="button" class="row operator sc" value="(" onclick="dis('&lpar;')">(</button>
-            <button type="button" class="row number expand" value="0" onclick="dis('0')">0</button>
-            <button type="button" class="row number" value="." onclick="dis('.')">.</button>
-            <button type="button" class="row operator sc" value="(" onclick="dis('&rpar;')">)</button>
-            <button type="button" class="row operator " id="eq" value="=" onclick="solve()">=</button>
+            <button type="button" class="row  sc" value="(" onclick="dis('&lpar;')">(</button>
+            <button type="button" class="row  expand" value="0" onclick="dis('0')">0</button>
+            <button type="button" class="row " value="." onclick="dis('.')">.</button>
+            <button type="button" class="row  sc" value="(" onclick="dis('&rpar;')">)</button>
+            <button type="button" class="row  " id="eq" value="=" onclick="solve()">=</button>
             
         </div>
     </div>
     
 
-    <script src="javascript.js"></script>
+    <script src="calc.js"></script>
 </body>
 
 </html>

@@ -6,8 +6,17 @@ body{
     /* background-color: rgb(207, 208, 255); */
     
 }
+.heading{
+    text-align: center;
+
+}
 h1{
-    color:rgb(255, 0, 0);
+
+    
+    background-color: rgb(45, 45, 45);
+    color:rgb(255, 255, 255);
+    /* width:200px; */
+    border-radius: 10px;
 
 }
 .cen{
@@ -26,6 +35,12 @@ h1{
     
     position:absolute;
    
+}
+.text_center{
+    text-align: center;
+}
+.text_right{
+    text-align: end;
 }
 button{
     font-family: 'Source Serif Pro', serif;
@@ -78,7 +93,7 @@ button:hover{
                
 }
 .row{
-    box-shadow:-8px -4px 8px rgba(19, 86, 95, 0.79);
+    box-shadow:-8px -4px 12px  rgba(19, 86, 95, 0.79);
 }
 .row:active{
     font-size: medium;
