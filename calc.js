@@ -118,7 +118,8 @@ function pi() {
         prec(y);
     }
     else {
-        prec(y) * y;
+        let k=document.getElementById("result").value*y;
+        prec(k);
     }
 }
 
